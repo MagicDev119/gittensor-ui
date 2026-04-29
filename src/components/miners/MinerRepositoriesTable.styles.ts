@@ -3,8 +3,11 @@ import { type SxProps } from '@mui/system';
 
 export const searchFieldSx: SxProps<Theme> = {
   mt: 2,
-  maxWidth: 400,
-  minWidth: 350,
+  alignSelf: 'stretch',
+  width: '100%',
+  boxSizing: 'border-box',
+  maxWidth: { xs: '100%', sm: 400 },
+  minWidth: { xs: 0, sm: 280 },
   '& .MuiOutlinedInput-root': {
     fontSize: '0.8rem',
     color: 'text.primary',
